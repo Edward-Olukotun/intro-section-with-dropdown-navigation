@@ -21,7 +21,7 @@ function Navbar() {
   };
 
   return (
-    <div className="flex w-screen justify-start items-center h-20 px-4 absolute z-10 text-black bg-white">
+    <div className="flex  w-screen justify-start items-center h-20 px-4 absolute z-10 text-black bg-white">
       <div>
         <h1 className="text-3xl font-extrabold">SNAP</h1>
       </div>
@@ -111,7 +111,7 @@ function Navbar() {
       {/* hamburger */}
       <div
         onClick={handleNav}
-        className="md:hidden z-10 ml-96 hover:cursor-pointer"
+        className="md:hidden z-10 ml-[80%] hover:cursor-pointer"
       >
         {nav ? (
           <AiOutlineClose className="text-black" size={20} />
