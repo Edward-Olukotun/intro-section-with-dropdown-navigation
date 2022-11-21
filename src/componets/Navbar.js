@@ -21,7 +21,7 @@ function Navbar() {
   };
 
   return (
-    <div className="flex  w-screen justify-start items-center h-20 px-4 absolute z-10 text-black bg-white">
+    <div className="flex  w-screen justify-start items-center h-20 px-4  text-black bg-white">
       <div>
         <h1 className="text-3xl font-extrabold">SNAP</h1>
       </div>
@@ -111,7 +111,7 @@ function Navbar() {
       {/* hamburger */}
       <div
         onClick={handleNav}
-        className="md:hidden z-10 ml-[80%] hover:cursor-pointer"
+        className="md:hidden z-10 ml-[70%] hover:cursor-pointer"
       >
         {nav ? (
           <AiOutlineClose className="text-black" size={20} />
@@ -121,7 +121,6 @@ function Navbar() {
       </div>
       {/* Mobile menu dropdown */}
       <div
-        onClick={handleNav}
         className={
           nav
             ? "absolute text-black left-0 top-0 w-[50%] ml-[50%]  bg-gray-100/90 px-4 py-14  flex flex-col"
@@ -129,9 +128,9 @@ function Navbar() {
         }
       >
         <div className="flex flex-col ">
-          <div className="flex my-3 hover:cursor-pointer hover:text-gray-300">
+          <div className="flex my-3 hover:cursor-pointer hover:text-gray-300" onClick={handleFeatures}>
             Features
-            <div onClick={handleFeatures}>
+            <div >
               {features ? (
                 <AiOutlineUp className="text-black mx-3 mt-1" size={15} />
               ) : (
@@ -171,9 +170,9 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="flex my-3 hover:cursor-pointer hover:text-gray-300">
+          <div className="flex my-3 hover:cursor-pointer hover:text-gray-300" onClick={handleCompany}>
             Company
-            <div onClick={handleCompany}>
+            <div >
               {company ? (
                 <AiOutlineUp className="text-black mx-2 mt-1" size={15} />
               ) : (
@@ -213,62 +212,6 @@ function Navbar() {
             </button>
           </div>
         </div>
-        {/* <ul> */}
-        {/* <li className="border-b flex">
-            FEATURES
-            <div onClick={handleFeatures}>
-              {features ? (
-                <AiOutlineUp className="text-black mx-2 " size={15} />
-              ) : (
-                <AiOutlineDown className="text-black mx-2 " size={15} />
-              )}
-            </div>
-            <ul
-              className={
-                features
-                  ? "absolute text-black border-b w-40 bg-white px-4 mt-14 rounded-xl py-5 flex flex-col content-start "
-                  : "hidden"
-              }
-            >
-              <li className="my-3 hover:cursor-pointer">ToDo list</li>
-              <li className="my-3 hover:cursor-pointer">Calender</li>
-              <li className="my-3 hover:cursor-pointer">Reminder</li>
-              <li className="my-3 hover:cursor-pointer">Planning</li>
-            </ul>
-          </li> */}
-
-        {/* <li className="border-b flex">
-            COMPANY
-            <div onClick={handleCompany}>
-              {company ? (
-                <AiOutlineUp className="text-black mx-2 " size={15} />
-              ) : (
-                <AiOutlineDown className="text-black mx-2 " size={15} />
-              )}
-            </div>
-            <ul
-              className={
-                company
-                  ? "absolute text-black border-b w-28 bg-white px-4 mt-10 rounded-xl  flex flex-col content-start "
-                  : "hidden"
-              }
-            >
-              <li className="my-3 hover:cursor-pointer">History</li>
-              <li className="my-3 hover:cursor-pointer">Our Team</li>
-              <li className="my-3 hover:cursor-pointer">Blog</li>
-            </ul>
-          </li> */}
-        {/* <li className="border-b">CAREER</li>
-          <li className="border-b">ABOUT</li> */}
-        {/* <div className="flex flex-col items-center">
-            <button className="my-6 border border-red-800 w-20 rounded-xl">
-              LOGIN
-            </button>
-            <button className="border border-red-800 w-20 rounded-xl">
-              REGISTER
-            </button>
-          </div> */}
-        {/* </ul> */}
       </div>
     </div>
   );
