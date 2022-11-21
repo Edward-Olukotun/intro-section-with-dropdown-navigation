@@ -48,7 +48,7 @@ function Main() {
                 Learn more
               </button>
             </div>
-            <div className="flex my-10 justify-start md:mt-[90%] lg:mt-[25%] xl:mt-[40%]">
+            <div className="flex my-10 justify-start md:mt-[90%] ">
               <img
                 src={Databiz}
                 alt="/"
