@@ -37,7 +37,7 @@ function Main() {
                 remote work
               </h1>
             </div>
-            <div className="md:flex md:justify-start">
+            <div className=" justify-center md:flex md:justify-start">
               <p className="w-80 font-bold text-md text-gray-400 text-center mx-5 md:mx-0 md:text-start">
                 Get your team in sync, no matter your location. Streamline
                 processes, create team rituals, and watch productivity soar.
